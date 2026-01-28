@@ -1,8 +1,8 @@
-package by.piskunou.algos;
+package by.piskunou.algos.arraysandhashing;
 
 import java.util.*;
 
-public class GroupAnagrams {
+public class GroupAnagrams implements Solution {
      private static final byte OFFSET = 'a'; //97
      private static final byte AMOUNT = 26;
      private static final char DELIMETER = '#';
