@@ -2,7 +2,7 @@ package by.piskunou.algos.arraysandhashing;
 
 import java.util.*;
 
-public class GroupAnagrams implements Solution {
+public class GroupAnagrams {
      private static final byte OFFSET = 'a'; //97
      private static final byte AMOUNT = 26;
      private static final char DELIMETER = '#';
@@ -77,7 +77,7 @@ public class GroupAnagrams implements Solution {
 
             StringBuilder sb = new StringBuilder(AMOUNT * 2);
             for (byte f: letters) {
-                sb.append(f);
+                sb.append(f).append(DELIMETER);
             }
             String key = sb.toString();
             map.computeIfAbsent(key, k -> new ArrayList<>()).add(str);
